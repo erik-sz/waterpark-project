@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is the project for the online course **Web Development** of University of London.
+This is the project for the online course **Web Development** of Goldsmiths, University of London.
 
 ## Group Members:
 
