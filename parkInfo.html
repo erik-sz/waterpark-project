@@ -8,7 +8,8 @@
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta http-equiv="refresh" content="300" />
         <meta name="keywords" content="water, park, adventures, family, children, kids, rollercoaster, summer, fun">
-        <meta name="robots" content="noindex, nofollow">       <link rel="stylesheet" href="/css/main.css"> 
+        <meta name="robots" content="noindex, nofollow">       <link rel="stylesheet" href="css/main.css"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     </head>
     <body>
         <!-- this is the top area of the page -->
@@ -16,55 +17,79 @@
             <h1>Goldsmiths Waterpark: Park Info</h1>
         </header>
 
-        <!-- this is the navigation bar, same for all three pages -->
-        <nav>
-            <a href="index.html"><b>Home Page</b></a> - 
-            <a href="parkInfo.html"><b>Park Info</b></a> -  
-            <a href="onlineBooking.html"><b>Online Booking</b></a>
-        </nav>
-        <img src="img/main_banner.jpg" id="mainBanner" alt="Banner">
-        <!--Opening hours in sidebar  -->
-
-        <aside style="float:right;width:30%;">
-            <h3> Open Hours: </h3>
-            Monday - Friday (excluding public holidays) open 10am-4pm
-            <br>Saturday, Sunday, school holidays and public holidays open 10am-5pm
-            <br>Opening hours are subject to change without notice. Goldsmiths Waterpark does not open on Christmas Day.
-            <br>
-        </aside>
-
-        <!-- about us article -->
-        <article style="float:left;width:65%;">
-            <h2> WATERPARK INFORMATION</h2>
-            <p> Everything you’ve ever wanted to know about Goldsmiths Waterpark is here in the info pages.  </p>
-            <h3>OUR STORY</h3>
-            <p>Our group is one of the most motivated in making everyone a happy satisfied customer.
-            With hard work we became the biggest waterpark in the country in 15 years. With continuously reinvesting
-            with our creative team now we have more than 20 attractions.
-            </p>
-        </article>
-
-        <article style="float:left;width:65%;">
-            <h2> TRANSPORT</h2>
-            <p> Our own bus cruise around the city in a loop 8 times a day. <br>
-            It goes to the airport, trainstation and other important junctions in every loop. You can find the timetable HERE.
-            </p>
-            <h3>ACCOMODATION</h3>
-            <p>We have five star hotel with a restaurant and a wellness center.
-            </p>
-        </article>
-
-        <!-- Advertisement in sidebar -->
-        <aside>
-            <div style="float:right;width:30%;">
-                <strong>Advertisement</strong>
+        <div class="container-fluid" id="mainContainer">
+                <!-- this is the navigation bar, same for all three pages -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <nav>
+                                <a href="index.html"><b>Home Page</b></a>
+                                <a href="parkInfo.html"><b>Park Info</b></a>  
+                                <a href="onlineBooking.html"><b>Online Booking</b></a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                        <img src="img/main_banner.jpg" id="mainBanner" alt="Banner">
+                </div>
             </div>
-        </aside>
-        
-        <footer style="position: fixed; bottom: 0;">
-            <details>
-                <summary>Copyright</summary> - All the rights are owned by Goldsmith University
-            </details>        
-        </footer>
+            <div class="row">
+                <div class="col-12 col-md-9">
+                    <div class="row">
+                        <div class="col-12 col-md-12 mt-5">
+                            <h2> WATERPARK INFORMATION</h2>
+                            <p> Everything you’ve ever wanted to know about Goldsmiths Waterpark is here in the info pages.  </p>
+                            <h3 class="mt-5">OUR STORY</h3>
+                            <p>
+                                Our group is one of the most motivated in making everyone a happy satisfied customer.
+                                With hard work we became the biggest waterpark in the country in 15 years. With continuously reinvesting
+                                with our creative team now we have more than 20 attractions.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-12 mt-5">
+                            <h2> TRANSPORT</h2>
+                            <p> Our own bus cruise around the city in a loop 8 times a day. <br>
+                            It goes to the airport, trainstation and other important junctions in every loop. You can find the timetable HERE.
+                            </p>
+                            <h3 class="mt-5">ACCOMODATION</h3>
+                            <p class="mb-5">We have five star hotel with a restaurant and a wellness center.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="row">
+                        <div class="col-12 col-md-12 mt-5 openHrs">
+                                <h3> Open Hours: </h3>
+                                <p>Monday - Friday (excluding public holidays) open 10am-4pm</p>
+                                <p>Saturday, Sunday, school holidays and public holidays open 10am-5pm</p>
+                                <p>Opening hours are subject to change without notice. Goldsmiths Waterpark does not open on Christmas Day.</p>
+                                
+                        </div>
+                        <div class="col-12 col-md-12 mt-3">
+                            <aside>
+                                <ol>
+                                    <li><strong>Advertisement</strong>
+                                        <img src="img/rollercoaster.jpg" class="adImage" alt="AD">
+                                    </li>
+                                </ol> 
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <footer>
+                        <details>
+                            <summary>Copyright</summary> - All the rights are owned by Goldsmith University
+                        </details>        
+                    </footer>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

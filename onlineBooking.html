@@ -8,7 +8,8 @@
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta http-equiv="refresh" content="300" />
         <meta name="keywords" content="water, park, adventures, family, children, kids, rollercoaster, summer, fun">
-        <meta name="robots" content="noindex, nofollow">       <link rel="stylesheet" href="/css/main.css">
+        <meta name="robots" content="noindex, nofollow">       <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     </head>
     <body>
         <!-- this is the top area of the page -->
@@ -17,76 +18,127 @@
         </header>
 
         <!-- this is the navigation bar, same for all three pages -->
-        <nav>
-            <a href="index.html"><b>Home Page</b></a> - 
-            <a href="parkInfo.html"><b>Park Info</b></a> -  
-            <a href="onlineBooking.html"><b>Online Booking</b></a>
-        </nav>
-        <img src="img/main_banner.jpg" id="mainBanner" alt="Banner">
-        <!-- promotion & offer zone -->
-        <div class="promotion" style="float:right;width:30%;">
-            <article class="">
-                <div class="offerTitle">
-                    <h2><strong> Great Savings for 2019 - Save Up to 30% Off Packages!</strong></h2>
+        <div class="container-fluid" id="mainContainer">
+                <!-- this is the navigation bar, same for all three pages -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <nav>
+                                <a href="index.html"><b>Home Page</b></a>
+                                <a href="parkInfo.html"><b>Park Info</b></a>  
+                                <a href="onlineBooking.html"><b>Online Booking</b></a>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
-                <div class="offerButton">
-                    <p> Learn More</p>
-                </div>
-            </article>
         </div>
-
-        <!-- This is the form for giving personal details, ticket type -->
-        <h3>Please fill out the form</h3>
-
-        <form>
-            <b>Name:</b><br>
-            <input type="text"><br>
-            
-            <b>Gender</b><br>
-            <input type="radio" name="gender" value="Male">
-            <b>Male</b><br>
-            <input type="radio" name="gender" value="Female">
-            <b>Female</b><br>
-            
-            <b>Date of birth:</b><br>
-            <input type="date" name="birth" value=""><br>
-            
-            <b>Address: </b><br>
-            <input type="text" name="address" value=""><br>
-            
-            <b>Phone number: </b><br>
-            <input type="text" name="phone" value=""><br>
-            
-            <b>Coupon code: </b><br>
-            <input type="text" name="coupon" value=""><br>
-
-            If you or someone with you need special care please write it in the comment section:<br>
-            <input type="text" name="comment" value=""><br><br>
-
-            Choose a ticket:
-            <select id="ticket" >
-                <option value="single">Single</option>
-                <option value="double">Double</option>
-                <option value="group5">Group for 5</option>
-                <option value="group5">Group for 10</option>
-                <option value="family">Family</option>
-            </select>
-            <input type="submit"  value="Buy ticket"><br>
-
-            <input type="checkbox" name="agreement" value="">
-            I agree to the terms and conditions
-        </form>
-
-        <!-- Link to Advertisement in the sidebar -->
-        <aside>
-            <div style="float:right;width:30%;">
-                <strong>Advertisement</strong>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <img src="img/main_banner.jpg" id="mainBanner" alt="Banner">
+                </div>
             </div>
-        </aside>
-        <footer style="position: fixed; bottom: 0;">
-            <details>
-                <summary>Copyright</summary> - All the rights are owned by Goldsmith University
-            </details>        
-        </footer>
+            <div class="row mt-5">
+                <div class="col-12 col-md-9">
+                    <div class="row">
+                        <div class="col-md-9">
+                                <h3>Please fill out the form</h3>
+        
+                                <form>
+                                    <div class="form-group">
+                                        <b>Name:</b><br>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <b>Gender</b><br>
+                                        <input type="radio" name="gender" value="Male">
+                                        <b>Male</b>
+                                        <input type="radio" name="gender" value="Female">
+                                        <b>Female</b><br>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group">
+                                                <b>Date of birth:</b><br>
+                                                <input type="date" name="birth" value="" class="form-control"><br>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group">
+                                                <b>Phone number: </b><br>
+                                                <input type="text" name="phone" value="" class="form-control"><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <b>Address: </b><br>
+                                        <input type="text" name="address" value="" class="form-control"><br>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <p>If you or someone with you need special care please write it in the comment section</p>
+                                        <textarea name="comment" id="" cols="30" rows="10" class="form-control"></textarea>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group">
+                                                <b>Coupon code: </b>
+                                                <input type="text" name="coupon" value="" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 form-group">
+                                             <b>Choose a ticket: </b>  
+                                              <select id="ticket" class="form-control">
+                                                    <option value="single">Single</option>
+                                                    <option value="double">Double</option>
+                                                    <option value="group5">Group for 5</option>
+                                                    <option value="group5">Group for 10</option>
+                                                    <option value="family">Family</option>
+                                                </select>
+                                        </div>
+                                        <div class="col-12 col-md-12">
+                                                <input type="checkbox" name="agreement" value="">
+                                                I agree to the terms and conditions
+                                        </div>
+                                        <div class="col-12 col-md-12 mt-3 mb-5">
+                                            <input type="submit" class="buy-btn" value="Buy ticket">
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+                <div n class="col-12 col-md-3">
+                        <article class="">
+                            <div class="offerTitle">
+                                <h4> Great Savings for 2019 - Save Up to 30% Off Packages!</h4>
+                            </div>
+                            <div class="offerButton">
+                                <a href="#"> Learn More</a>
+                            </div>
+                        </article>
+                        <aside>
+                                <ol>
+                                    <li><strong>Advertisement</strong>
+                                        <img src="img/rollercoaster.jpg" class="adImage" alt="AD">
+                                    </li>
+                                    <li><strong>Advertisement</strong>
+                                        <img src="img/rollercoaster.jpg" class="adImage" alt="AD">
+                                    </li>
+                                </ol> 
+                            </aside>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <footer>
+                            <details>
+                                <summary>Copyright</summary> - All the rights are owned by Goldsmith University
+                            </details>        
+                        </footer>
+                    </div>
+                </div>
+        </div>
     </body>
 </html>

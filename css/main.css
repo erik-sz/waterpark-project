@@ -4,8 +4,8 @@
 }
 
 #mainContainer {
-    max-width: 1200px;
-    margin: auto;  
+    padding: 0; 
+    background-color: #38afbb;
 }
 
 header h1 {
@@ -13,7 +13,6 @@ header h1 {
     color: #ffffff;
     font-size: 3.2em;
     text-align: center;
-    width: 1200px;
     margin-bottom: 0px;
     background-color: #38afbb;
     padding-bottom: 5px;
@@ -22,37 +21,37 @@ header h1 {
 }
 
 nav {
-    text-align: center;
+    text-align: right;
     font-family: "Verdana", "Arial", sans-serif;
     font-size: 0.8em;
     margin-top: 0px;
     margin-bottom: 15px;
-    width: 1200px;
-    background-color: #38afbb;
+    
     padding-top: 5px;
     padding-bottom: 5px;
-    border-top: 1px dashed white;
     color: white;
     margin-bottom: 0px;
 }
 
-nav a, a:link, a:visited, a:focus, a:hover, a:active {
-  color: white;
-  text-decoration: none;
+nav a, nav a:link,nav a:visited,nav a:focus,nav a:hover,nav a:active {
+    color: white !important;
+    text-decoration: none !important;
+    padding: 20px 0px 20px 30px;
+    font-size: 18px;
+
 }
 
 #mainBanner {
     text-align: center;
-    width=1200px;
-    height=316px;
     margin-top: 0px;
+    width:100%;
 }
 
 
 #parkInfographic {
     display: block;
     text-align: center;
-    width:1200px;
+    width:100%;
     margin-top: 0px;
 }
 
@@ -69,7 +68,9 @@ article p {
     color: #444444;
 }
 */
-
+p{
+    font-size: 18px;
+}
 .midPageContainer {
     width: 1200px;
     height: 600px;
@@ -118,11 +119,9 @@ article p {
 
 footer {
     box-sizing: border-box;
-    position: fixed; 
     bottom: 0;
     background-color: #38afbb;
-    width: 1200px;
-    height: 30px;
+    width: 100%;
     color: white;
     padding-left: 20px;
     font-family: "Verdana", "Arial", sans-serif;
@@ -133,3 +132,27 @@ footer {
     margin-bottom: 0px;
 }
 
+img{
+    max-width: 100%;
+}
+iframe{
+    width: 100%;
+    height: 313px;
+}
+ol li{
+    list-style-position: inside;
+}
+ol{
+    padding-left: 0;
+}
+.openHrs p{
+    font-size: 15px;
+}
+.buy-btn{
+    background: #38afbb;
+    color: #fff;
+    padding: 12px 30px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px 0px #00000069;
+}
