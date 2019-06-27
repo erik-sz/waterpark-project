@@ -9,64 +9,78 @@
         <meta http-equiv="refresh" content="300" />
         <meta name="keywords" content="water, park, adventures, family, children, kids, rollercoaster, summer, fun">
         <meta name="robots" content="noindex, nofollow">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     </head>
     <body>
-        <div id="mainContainer">
-            <!-- this is the top area of the page, same for all three pages -->
             <header>
-                <h1>Goldsmiths Waterpark: Home Page</h1>
-            </header>
-
+                    <h1>Goldsmiths Waterpark: Home Page</h1>
+                </header>
+        <div class="container-fluid" id="mainContainer">
             <!-- this is the navigation bar, same for all three pages -->
-            <nav>
-                <a href="index.html"><b>Home Page</b></a> - 
-                <a href="parkInfo.html"><b>Park Info</b></a> -  
-                <a href="onlineBooking.html"><b>Online Booking</b></a>
-            </nav>
-            <img src="img/main_banner.jpg" id="mainBanner" alt="Banner">
-            
-            <div class="midPageContainer">
-                <!-- an article, introducint the park -->
-                <div id="parkIntro">
-
-                    <article>
-                        <h2> Welcome To Goldsmiths Waterpark!</h2>
-
-                        <p> This summer, Goldsmiths, University of London is openning its first ever theme park. </p>
-
-                        <p> With more than 20 attractions, there's something for everyone: indoor and outdoor swimming pool(with different features, of course), fountains, bikini shows, roller coaster through waterfalls, water bombs, marine park with fish, etc.</p>
-
-                        <p> Many facilities are available at the park, including water-park-style restaurants and food areas, medical centers, stores with water guns and swimming equipments in stock, currency exchange services, accommodation inside the park, and transportion to and from the airport. You can check the Park Info page for more details. </p>
-
-                        <p> You can book tickets online now! </p>
-                    </article>
-
-                    <!-- introduction video of the park, an embedded youtube video-->
-                    <iframe src="https://www.youtube.com/embed/7c-ZO8_vgEo" id="promoVideo"> 
-                    </iframe>
-                    <!-- Link to Advertisement in the sidebar -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <nav>
+                            <a href="index.html"><b>Home Page</b></a>
+                            <a href="parkInfo.html"><b>Park Info</b></a>  
+                            <a href="onlineBooking.html"><b>Online Booking</b></a>
+                        </nav>
+                    </div>
                 </div>
-                <aside>
-                    <ol>
-                        <li><strong>Advertisement</strong>
-                            <img src="img/rollercoaster.jpg" class="adImage" alt="AD">
-                        </li>
-                        <li><strong>Advertisement</strong>
-                            <img src="img/rollercoaster.jpg" class="adImage" alt="AD">
-                        </li>
-                    </ol>
-                    
-                </aside>
             </div>
-
-            <img src="img/park_infographic.jpg" id="parkInfographic" alt="Park Info">
-
-            <footer>
-                <details>
-                    <summary>Copyright</summary> - All the rights are owned by Goldsmith University
-                </details>        
-            </footer>
         </div>
+        <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <img src="img/main_banner.jpg" id="mainBanner" alt="Banner">
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-12 col-md-9">
+                        <div class="row">
+                            <div class="col-12 col-md-12 mb-5">
+                                <h2> Welcome To Goldsmiths Waterpark!</h2>
+                            </div>
+                            <div class="col-12 col-md-8"><iframe src="https://www.youtube.com/embed/7c-ZO8_vgEo" id="promoVideo"></iframe></div>
+                            <div class="col-12 col-md-4">
+                                    <p> This summer, Goldsmiths, University of London is openning its first ever theme park. </p>
+                                    <p> With more than 20 attractions, there's something for everyone: indoor and outdoor swimming pool(with different features, of course), fountains, bikini shows, roller coaster through waterfalls, water bombs, marine park with fish, etc.</p>
+                            </div>
+                            <div class="col-12 col-md-12">
+                                    <p> Many facilities are available at the park, including water-park-style restaurants and food areas, medical centers, stores with water guns and swimming equipments in stock, currency exchange services, accommodation inside the park, and transportion to and from the airport. You can check the Park Info page for more details. </p>
+    
+                                    <p> You can book tickets online now! </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <aside>
+                            <ol>
+                                <li><strong>Advertisement</strong>
+                                    <img src="img/rollercoaster.jpg" class="adImage" alt="AD">
+                                </li>
+                                <li><strong>Advertisement</strong>
+                                    <img src="img/rollercoaster.jpg" class="adImage" alt="AD">
+                                </li>
+                            </ol> 
+                        </aside>
+                    </div>
+                    <div class="col-12 col-md-12 mt-5">
+                        <img src="img/park_infographic.jpg" id="parkInfographic" alt="Park Info">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <footer>
+                            <details>
+                                <summary>Copyright</summary> - All the rights are owned by Goldsmith University
+                            </details>        
+                        </footer>
+                    </div>
+                </div>
+            
+        </div>
+        
     </body>
 </html>
