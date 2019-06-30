@@ -7,7 +7,8 @@ This is the project for the online course **Web Development** of Goldsmiths, Uni
 ## Group Members:
 
 * Chung-Yu Chiu
-* Erik Szurovecz
-* Chen Ni
+* Valerio Crispi
 * Suhas Dattatreya
 * Zeta Kovacs
+* Chen Ni
+* Erik Szurovecz
