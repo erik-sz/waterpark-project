@@ -33,7 +33,7 @@ nav {
     margin-bottom: 0px;
 }
 
-nav a, nav a:link,nav a:visited,nav a:focus,nav a:hover,nav a:active {
+nav a, nav a:link,nav a:visited,nav a:focus,nav a:active {
     color: white !important;
     text-decoration: none !important;
     padding: 20px 0px 20px 30px;
@@ -41,6 +41,17 @@ nav a, nav a:link,nav a:visited,nav a:focus,nav a:hover,nav a:active {
 
 }
 
+nav a:hover {
+    animation-name: anim;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes anim {
+    0%   {color: white; text-shadow: none;}
+    50%  {color: #125ea5; text-shadow: 0px 0px 13px white;}
+    100% {color: white; text-shadow: none;}
+}
 #mainBanner {
     text-align: center;
     margin-top: 0px;
