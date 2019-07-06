@@ -2,12 +2,12 @@
     font-family: "Water Park";
     src: url(../fonts/Water_Park.ttf);
 }
-
+/*this maincontainer include the navbar*/
 #mainContainer {
     padding: 0; 
     background-color: #38afbb;
 }
-
+/*this is for the logo text*/
 header h1 {
     font-family: "Water Park";
     color: #ffffff;
@@ -19,7 +19,7 @@ header h1 {
     padding-top: 15px;
     margin-top: 0px
 }
-
+/*this for the navigation bar*/
 nav {
     text-align: right;
     font-family: "Verdana", "Arial", sans-serif;
@@ -40,25 +40,26 @@ nav a, nav a:link,nav a:visited,nav a:focus,nav a:active {
     font-size: 18px;
 
 }
-
+/*this is fot the navigation links*/
 nav a:hover {
     animation-name: anim;
     animation-iteration-count: infinite;
     animation-duration: 2s;
 }
-
+/*this is the animation*/
 @keyframes anim {
     0%   {color: white; text-shadow: none;}
     50%  {color: #125ea5; text-shadow: 0px 0px 13px white;}
     100% {color: white; text-shadow: none;}
 }
+/*this is for the banner image*/
 #mainBanner {
     text-align: center;
     margin-top: 0px;
     width:100%;
 }
 
-
+/*this is for the parkinfographic.jpg image*/
 #parkInfographic {
     display: block;
     text-align: center;
@@ -97,12 +98,13 @@ p{
     width: 100%;
 }
 
+/*this is for the promo video on the main page*/
 .midPageContainer #parkIntro #promoVideo {
     width: 100%;
     height: 55%;
 }
 
-
+/*the next four styling are for the advertisement on the right side*/
 .midPageContainer aside {
     float: right;
     text-align: center;
@@ -128,6 +130,7 @@ p{
     width: 100%;
 }
 
+/*this is for the foooter*/
 footer {
     box-sizing: border-box;
     bottom: 0;
@@ -156,9 +159,11 @@ ol li{
 ol{
     padding-left: 0;
 }
+/*this is for the opening hours on the parkinfo page*/
 .openHrs p{
     font-size: 15px;
 }
+/*this is for the buy ticket button*/
 .buy-btn{
     background: #38afbb;
     color: #fff;
